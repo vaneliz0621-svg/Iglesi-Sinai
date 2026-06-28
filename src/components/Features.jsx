@@ -47,9 +47,16 @@ const Features = () => {
                     <i className={`bi ${feature.icon}`}></i>
                   </div>
                   <h3 className="h4 fw-bold mb-3">{feature.title}</h3>
-                  <p className="text-light opacity-75 mb-0">
+                  <p className={`text-light opacity-75 ${feature.link ? 'mb-4' : 'mb-0'}`}>
                     {feature.description}
                   </p>
+                  {feature.link && (
+                    <div className="mt-3 mb-2">
+                      <span className="btn w-100 py-2 d-flex align-items-center justify-content-center" style={{ backgroundColor: 'var(--accent-color)', color: '#fff', borderRadius: '8px', fontWeight: '600', transition: 'all 0.3s ease' }}>
+                        <i className="bi bi-play-circle-fill me-2 fs-5"></i> Escuchalo.
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             );

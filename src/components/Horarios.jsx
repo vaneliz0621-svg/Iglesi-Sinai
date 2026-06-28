@@ -9,12 +9,6 @@ const Horarios = () => {
       icon: "bi-sun-fill"
     },
     {
-      dia: "Miercoles",
-      hora: "6:00 AM",
-      actividad: "Ayunos y oracion. Realizado de manera personal desde el lugar donde cada miembro se encuentre.",
-      icon: "bi-book-fill"
-    },
-    {
       dia: "Viernes",
       hora: "6:30 PM",
       actividad: "Servicio General",
@@ -41,7 +35,7 @@ const Horarios = () => {
                   <i className={`bi ${item.icon}`}></i>
                 </div>
                 <h3 className="h4 fw-bold mb-2">{item.dia}</h3>
-                <h4 className="h5 text-gradient mb-3">{item.hora}</h4>
+                <h4 className="h5 text-gradient mb-3 notranslate" translate="no">{item.hora}</h4>
                 <p className="text-light opacity-75 mb-0">
                   {item.actividad}
                 </p>
