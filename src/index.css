@@ -134,3 +134,24 @@ footer {
   background: #2e1c15;
   border-top: 1px solid #5d4037;
 }
+
+/* Social Buttons Styles */
+.btn-social-icon {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color) !important;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-social-icon:hover {
+  background-color: var(--accent-color);
+  color: white !important;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(210, 105, 30, 0.4);
+}

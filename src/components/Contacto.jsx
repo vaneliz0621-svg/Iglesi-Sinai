@@ -12,8 +12,12 @@ const Contacto = () => {
               Transformando vidas a través del amor de Cristo. Únete a nuestra familia y descubre tu propósito en un ambiente de paz.
             </p>
             <div className="d-flex gap-3 justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-              <a href="https://www.facebook.com/share/1ETaFZ1rwU/" target="_blank" rel="noopener noreferrer" className="btn rounded-circle" style={{ width: '50px', height: '50px', padding: '0', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid var(--accent-color)', color: 'var(--accent-color)', backgroundColor: 'transparent', transition: 'all 0.3s' }}>
+              <a href="https://www.facebook.com/share/1ETaFZ1rwU/" target="_blank" rel="noopener noreferrer" className="btn rounded-circle btn-social-icon">
                 <i className="bi bi-facebook fs-5"></i>
+              </a>
+              {/* Ícono de WhatsApp con enlace y efecto hover suave */}
+              <a href="https://wa.link/bp155t" target="_blank" rel="noopener noreferrer" className="btn rounded-circle btn-social-icon">
+                <i className="bi bi-whatsapp fs-5"></i>
               </a>
             </div>
           </div>
@@ -31,15 +35,22 @@ const Contacto = () => {
                     <span className="text-light opacity-75">Colonia Nazareno, El lagarto<br /></span>
                   </div>
                 </li>
-                <li className="d-flex gap-3 align-items-center">
+                <li className="d-flex gap-3 align-items-start mt-4">
                   <div className="icon-box m-0" style={{ width: '50px', height: '50px', fontSize: '22px', flexShrink: 0 }}>
-                    <i className="bi bi-telephone-fill"></i>
+                    <i className="bi bi-envelope-fill"></i>
                   </div>
                   <div>
-                    <strong className="d-block fs-5 mb-1" style={{ color: 'var(--text-heading)' }}>Teléfono</strong>
-                    <a href="tel:+12345678900" className="text-light opacity-75 text-decoration-none">+503 7239-9628</a>
+                    <strong className="d-block fs-5 mb-1" style={{ color: 'var(--text-heading)' }}>Envíanos un Mensaje</strong>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=j7000r.jr@gmail.com&su=Contacto%20desde%20la%20Web" target="_blank" rel="noopener noreferrer" className="d-inline-flex align-items-center gap-2 text-light opacity-75 text-decoration-none" style={{ transition: 'all 0.3s' }} onMouseOver={(e) => {e.currentTarget.style.color = 'var(--accent-color)'; e.currentTarget.style.opacity = '1'}} onMouseOut={(e) => {e.currentTarget.style.color = ''; e.currentTarget.style.opacity = '0.75'}}>
+                      j7000r.jr@gmail.com
+                      <span className="badge rounded-pill" style={{ backgroundColor: 'var(--accent-color)', color: '#fff', fontSize: '0.75rem', fontWeight: '500' }}>
+                        ¡Haz clic aquí!
+                      </span>
+                    </a>
+                    <small className="d-block mt-1 text-light opacity-50" style={{ fontSize: '0.8rem' }}>Al hacer clic se abrirá tu correo listo para escribirnos.</small>
                   </div>
                 </li>
+
               </ul>
             </div>
           </div>

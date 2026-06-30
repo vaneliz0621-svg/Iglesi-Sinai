@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="container">
         <a className="navbar-brand fw-bold fs-3 d-flex align-items-center gap-2" href="#" style={{ color: 'var(--text-heading)' }}>
           <img src="/logo-iglesia.jpg" alt="IGLE SINAI Logo" width="55" height="55" className="rounded-circle shadow-sm" style={{ objectFit: 'contain', backgroundColor: '#000', padding: '2px' }} />
-          <span className="text-uppercase tracking-wider">IGLE SINAI</span>
+          <span className="text-uppercase tracking-wider notranslate" translate="no">IGLE SINAI</span>
         </a>
 
         <button

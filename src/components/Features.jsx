@@ -17,9 +17,8 @@ const Features = () => {
     {
       image: "/alabanza.jpg",
       icon: "bi-music-note-beamed",
-      title: "Himno de Igle Sinai",
-      description: "Un canto que expresa nuestra fe, nuestra identidad y el mensaje de esperanza que caracteriza a Sinai, Hospital del Alma.",
-      link: "https://youtu.be/PHhXEjdFHVs?si=cuyRfq1CPUDVQkY2"
+      title: <>Himno de <span className="notranslate" translate="no">Igle Sinai</span></>,
+      description: <>Un canto que expresa nuestra fe, nuestra identidad y el mensaje de esperanza que caracteriza a <span className="notranslate" translate="no">Sinai</span>, Hospital del Alma.</>
     }
   ];
 
@@ -28,10 +27,10 @@ const Features = () => {
       <div className="container py-5">
         <div className="text-center mb-5 pb-3">
           <span className="text-gradient fw-bold text-uppercase tracking-wide">Lo que nos define</span>
-          <h2 className="display-5 fw-bold mt-2 mb-4">¿Por qué elegir <span style={{ color: 'var(--accent-color)' }}>Igle Sinai?</span></h2>
+          <h2 className="display-5 fw-bold mt-2 mb-4">¿Por qué elegir <span style={{ color: 'var(--accent-color)' }} className="notranslate" translate="no">Igle Sinai</span>?</h2>
           <p className="lead text-white mx-auto" style={{ maxWidth: '700px' }}>
             No importa quiénes fuimos ni las circunstancias que hemos enfrentado. Dios sigue transformando vidas, restaurando corazones y renovando la esperanza.
-            "Sinai, Hospital del Alma" es el reflejo de nuestra fe en un Dios que sana, guía y da propósito a quienes caminan cerca de Él.
+            "<span className="notranslate" translate="no">Sinai</span>, Hospital del Alma" es el reflejo de nuestra fe en un Dios que sana, guía y da propósito a quienes caminan cerca de Él.
           </p>
         </div>
 
